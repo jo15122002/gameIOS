@@ -25,11 +25,11 @@ class ViewController: UIViewController {
             self.ball.center.y += dirY
         
             if(self.playerTwo.frame.contains(self.ball.center)){
-                dirY = -1.0
+                dirY = 1.0
             }
             
             if(self.rightWall.frame.contains(self.ball.center)){
-                dirX = -1.0
+                dirX *= -1.0
             }
         }
     }
